@@ -20,3 +20,31 @@ ansible 2.9.6
   python version = 3.8.10 (default, Mar 15 2022, 12:22:08) [GCC 9.4.0]
 pashi@pashi-docker:~/virt-homeworks$ 
 ```
+# 4 
+Пришлось ставить VPN, потом vagrant смог скачать ubuntu
+```
+pashi@pashi-docker:~/5_2/vagrant$ vagrant ssh
+Welcome to Ubuntu 20.04.3 LTS (GNU/Linux 5.4.0-91-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Fri 22 Apr 2022 06:40:47 PM UTC
+
+  System load:  0.11               Users logged in:          0
+  Usage of /:   13.4% of 30.88GB   IPv4 address for docker0: 172.17.0.1
+  Memory usage: 24%                IPv4 address for eth0:    10.0.2.15
+  Swap usage:   0%                 IPv4 address for eth1:    192.168.56.11
+  Processes:    110
+
+
+This system is built by the Bento project by Chef Software
+More information can be found at https://github.com/chef/bento
+Last login: Fri Apr 22 18:37:07 2022 from 10.0.2.2
+vagrant@server1:~$ docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+vagrant@server1:~$ 
+```
+
+
